@@ -1,0 +1,77 @@
+#portfolio {
+  padding: 50px 0;
+  width: 85vw;
+  max-width: 170rem;
+  margin: 0 auto;
+  
+}
+.section-title{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work-item{
+    border: 0.1px solid #3d3c3c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work-item img{
+    width: 100%;
+    height: 100%;
+   border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ;
+}
+.work-details{
+    width: 100%;
+    height: 0;  
+    background: linear-gradient(rgba(0,0,0,0.6),#00BCD4);
+    border-radius: 10px;
+    position: absolute;
+    left :0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 1rem;
+    transition: height 0.5s;
+}
+.work-details h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.work-links{
+    display: flex;
+    flex-direction:row;
+    
+}
+.work-details a{
+    margin-top: 20px;
+    margin-right: 20px;
+    line-height: 60px; 
+    background: #fff;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    text-align: center;   
+}
+
+
+
+.work-item:hover img{
+    transform:scale(1.1) ;
+}
+.work-item:hover .work-details{
+    height: 100%;
+}

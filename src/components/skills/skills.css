@@ -1,0 +1,51 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  #skills{
+width: 85vw;
+  max-width: 170rem;
+  margin: 50PX auto;
+  }
+ 
+  
+  
+  .marquee {
+    overflow: hidden;
+    margin: 40px 0; 
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: marquee 35s linear infinite;
+  }
+  
+  .slick-slide {
+    margin: 0 10px;
+  }
+
+  .imgSkills{
+    width: 7%;
+    height: 8%;
+   
+}
+
+  @media screen and (max-width: 1220px) {
+    .imgSkills{
+        width: 25%;
+        height: 15%;
+       
+    }
+  }
+  
+  /* Keyframes for marquee animation */
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
