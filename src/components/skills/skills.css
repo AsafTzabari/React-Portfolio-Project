@@ -8,44 +8,40 @@ width: 85vw;
   max-width: 170rem;
   margin: 50PX auto;
   }
+  #skills .section-title{
+    margin-bottom: 50px;
+  }
+  #skills a{
+    text-align: center;   
+}
+#skills a img:hover{
+  transition: transform 0.5s ;
+  transform:scale(1.1) ; 
+}
+  #skills .skillsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+  }
+  
+  #skills .skillsContainer{
+    display: grid;
+   
+  }
  
-  
-  
-  .marquee {
-    overflow: hidden;
-    margin: 40px 0; 
-  }
-  
-  .marquee-content {
-    display: flex;
-    animation: marquee 35s linear infinite;
-  }
-  
-  .slick-slide {
-    margin: 0 10px;
-  }
-
   .imgSkills{
-    width: 7%;
-    height: 8%;
+    width: 70%;
+    height: 70%;
    
 }
 
   @media screen and (max-width: 1220px) {
     .imgSkills{
-        width: 25%;
-        height: 15%;
+        width: 80%;
+        height: 80%;
        
     }
   }
   
-  /* Keyframes for marquee animation */
-  @keyframes marquee {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
+
   
