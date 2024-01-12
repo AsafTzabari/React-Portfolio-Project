@@ -22,7 +22,7 @@ const projectArray = [
         description:"A game that tests your memory with 4 colors that you need to remember their pattern which increases by 1 each round randomly.",
         image:"simon-game-pic.png",
         github:"https://github.com/AsafTzabari/Simon-Game-FrontEnd-Project",
-        live:"https://github.com/AsafTzabari/Simon-Game-FrontEnd-Project"
+        live:"https://asaftzabari.github.io/Simon-Game-FrontEnd-Project"
     },
     {
         key:4,
