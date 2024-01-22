@@ -14,7 +14,15 @@ const projectArray = [
         description:"Web application that fetches and displays real-time NBA scores using the RapidAPI service.",
         image:"NBA-project-pic.png",
         github:"https://github.com/AsafTzabari/NBA-Scores-FullStack-Project",
-        live:"https://asaf-tzabari-nba-scores-fullstack-project.onrender.com/"
+        live:"https://asaf-tzabari-simon-game-frontend-project.onrender.com"
+    },
+    {
+        key:4,
+        title:"Drum Kit",
+        description:"simple web application that allows users to play drum sounds by clicking on corresponding buttons.",
+        image:"drum-kit-pic.png",
+        github:"https://github.com/AsafTzabari/Drum-Kit-FrontEnd-Project/tree/main",
+        live:"https://asaftzabari-drum-kit-frontend-project.onrender.com"
     },
     {
         key:3,
@@ -23,14 +31,6 @@ const projectArray = [
         image:"simon-game-pic.png",
         github:"https://github.com/AsafTzabari/Simon-Game-FrontEnd-Project",
         live:"https://asaftzabari.github.io/Simon-Game-FrontEnd-Project"
-    },
-    {
-        key:4,
-        title:"Drum Kit",
-        description:"simple web application that allows users to play drum sounds by clicking on corresponding buttons.",
-        image:"drum-kit-pic.png",
-        github:"https://github.com/AsafTzabari/Drum-Kit-FrontEnd-Project/tree/main",
-        live:"https://github.com/AsafTzabari/Drum-Kit-FrontEnd-Project/tree/main"
     },
     {
         key:5,
