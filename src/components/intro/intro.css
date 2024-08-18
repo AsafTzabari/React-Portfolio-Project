@@ -1,22 +1,23 @@
-#intro{
+#intro {
     height: calc(100vh - 4rem);
     width: 85vw;
-  max-width: 170rem;
-  margin: 0 auto;
-  
+    max-width: 170rem;
+    margin: 0 auto;
     margin-bottom: 50px;
     overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: row; /* Default to row for larger screens */
+    align-items: center;
+    justify-content: space-between;
 }
-.profilePicture{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    object-fit: cover;
+
+.profilePicture {
     height: 100vh;
+    width: auto;
+    object-fit: cover;
 }
-.introContent{
+
+.introContent {
     height: 100vh;
     width: 100vw;
     font-size: 5rem;
@@ -24,20 +25,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
 }
-.hello{
+
+.hello {
     font-size: 3rem;
     font-weight: 50;
 }
-.introName{
+
+.introName {
     color: #00BCD4;
 }
-.introPara{
+
+.introPara {
     letter-spacing: 1px;
     font-size: x-large;
-    font-weight: 300   ;
+    font-weight: 300;
 }
-.btn{
+
+.btn {
     font-size: large;
     margin: 1rem 0;
     padding: 0.75rem 2rem;
@@ -47,28 +53,39 @@
     color: #fff;
     transition: background-color 0.5s;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #00BCD4;
-    
 }
 
 @media screen and (max-width: 768px) {
-    .profilePicture{  
-        height: 100%;
-        width: 100%;
+    #intro {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center;
+        justify-content: center;
+        height: auto;
     }
-    .introContent{
+
+    .profilePicture {
+        height: 40vh; /* Adjust height for mobile */
+        width: 100%;
+        margin-bottom: 1rem; /* Add space below the image */
+    }
+
+    .introContent {
+        height: auto;
+        width: 100%;
         font-size: 3rem;
         font-weight: 700;
+        text-align: center; /* Center text for mobile */
     }
-    .hello{
-        font-weight: 100;
-    }
-    .introName{
-        color: #00BCD4;
-    }
-    .introPara{
+
+    .introPara {
         font-size: medium;
     }
-    
+
+    .btn {
+        font-size: medium;
+        width: auto;
+    }
 }

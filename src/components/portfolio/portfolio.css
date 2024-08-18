@@ -1,40 +1,44 @@
 #portfolio {
-  padding: 50px 0;
-  width: 85vw;
-  max-width: 170rem;
-  margin: 0 auto;
-  
+    padding: 50px 0;
+    width: 85vw;
+    max-width: 170rem;
+    margin: 0 auto;
 }
-.section-title{
+
+.section-title {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
-.work-list{
+
+.work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work-item{
+
+.work-item {
     border: 0.1px solid #3d3c3c;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.work-item img{
+
+.work-item img {
     width: 100%;
     height: 100%;
-   border-radius: 10px;
+    border-radius: 10px;
     display: block;
-    transition: transform 0.5s ;
+    transition: transform 0.5s;
 }
-.work-details{
+
+.work-details {
     width: 100%;
-    height: 0;  
-    background: linear-gradient(rgba(0,0,0,0.6),#00BCD4);
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #00BCD4);
     border-radius: 10px;
     position: absolute;
-    left :0;
+    left: 0;
     bottom: 0;
     overflow: hidden;
     display: flex;
@@ -46,32 +50,53 @@
     font-size: 1rem;
     transition: height 0.5s;
 }
-.work-details h3{
+
+.work-details h3 {
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-.work-links{
+
+.work-links {
     display: flex;
-    flex-direction:row;
-    
+    flex-direction: row;
 }
-.work-details a{
+
+.work-details a {
     margin-top: 20px;
     margin-right: 20px;
-    line-height: 60px; 
+    line-height: 60px;
     background: #fff;
     width: 50px;
-    height: 50px; 
+    height: 50px;
     border-radius: 50%;
-    text-align: center;   
+    text-align: center;
 }
 
-
-
-.work-item:hover img{
-    transform:scale(1.1) ;
+.work-item:hover img {
+    transform: scale(1.1);
 }
-.work-item:hover .work-details{
+
+.work-item:hover .work-details {
     height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .work-list {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        justify-items: center; /* Center the grid items */
+    }
+
+    .work-item {
+        width: 90%; /* Adjust the width of work items to be smaller on mobile */
+    }
+
+    .work-details {
+        padding: 0 10px; /* Adjust padding for better centering */
+        font-size: 0.8rem; /* Slightly smaller font size for mobile */
+    }
+
+    .work-details h3 {
+        font-size: 1.1rem; /* Adjust title size on mobile */
+    }
 }

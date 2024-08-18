@@ -1,11 +1,13 @@
-#contact{
+#contact {
     padding: 175px 10%;
 }
-#contact .subTitle{
+
+#contact .subTitle {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
-#contact .container{
+
+#contact .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -20,18 +22,19 @@
     flex-basis: 60%;
     display: inline-block;
 }
-.line{
+
+.line {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 1.5rem;
-    
 }
-.socialIcons{
-    margin-top:30px;
 
+.socialIcons {
+    margin-top: 30px;
 }
-.socialIcons a{
+
+.socialIcons a {
     text-decoration: none;
     font-size: 30px;
     margin: 15px;
@@ -39,36 +42,53 @@
     display: inline-block;
     transition: transform 0.5s;
 }
-.socialIcons a:hover{
+
+.socialIcons a:hover {
     fill: #00BCD4;
     transform: translateY(-5px);
 }
-.contactRight form{
+
+.contactRight form {
     width: 100%;
-   
 }
-form input, form textarea{
-width: 100% ;
-border: none;
-background: #3d3c3c ;
-outline: none;
-padding: 15px;
-margin: 15px 0 ;
-color: #fff;
-font-size: 18px;
-border-radius:6px ;
+
+form input, form textarea {
+    width: 100%;
+    border: none;
+    background: #3d3c3c;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
 }
 
 @media screen and (max-width: 992px) {
-    #contact .container{
+    #contact .container {
         flex-direction: column;
     }
-    .contactLeft{
+    .contactLeft {
         flex-basis: 100%;
     }
-    .contactRight{
+    .contactRight {
         flex-basis: 100%;
     }
-    
 }
 
+@media screen and (max-width: 768px) {
+    .line {
+        font-size: 1.2rem; /* Reduce the font size of the email address */
+    }
+
+    .socialIcons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the icons */
+    }
+
+    .socialIcons a {
+        margin: 10px; /* Reduce margin for better fit */
+        font-size: 25px; /* Reduce the size of the icons */
+    }
+}
